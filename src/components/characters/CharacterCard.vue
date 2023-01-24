@@ -23,6 +23,7 @@ export default {
 
 
 <style lang="scss" scoped>
+
     img {
         border-radius: 50%;
         display: block;
