@@ -38,7 +38,7 @@ export default {
             <option selected value="">-</option>
             <option v-for="pokemonType in this.typeFilter" :value="pokemonType">{{ pokemonType }}</option>
         </select>
-        <button type="button" class="btn btn-info mb-4 ms-2" @click="$emit('type-reset')"><strong>Annulla</strong></button>
+        <button type="button" class="btn btn-info mb-4 ms-2" @click="$emit('type-reset', filterValue = '')"><strong>Annulla</strong></button>
     </div>
 
 </template>
