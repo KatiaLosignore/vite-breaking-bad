@@ -27,7 +27,7 @@ export default {
 <template>
   <header>
     <div class="container d-flex justify-content-between align-items-center mt-4" >
-      <h1>Pokemon</h1>
+      <h1 class="text-primary bg-light">Pokemon</h1>
       <div>
         <font-awesome-icon icon="fa-solid fa-circle" />
         <font-awesome-icon icon="fa-solid fa-circle" />

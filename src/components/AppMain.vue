@@ -8,13 +8,16 @@ export default {
 
 
 <template>
-  <main class="mt-5">
-    <section id="section-image">
-      <characters-list></characters-list>
+  <div class="container">
+    <main class="mt-3">
+      <section id="section-image">
+        <characters-list></characters-list>
+  
+      </section>
+  
+    </main>
 
-    </section>
-
-  </main>
+  </div>
   
 </template>
 
@@ -22,12 +25,10 @@ export default {
 <style lang="scss">
 
 #section-image {
-  background-color: red;
-  border: 4px solid blue;
-  padding: 30px;
+  background-color: aqua;
+  border: 5px solid blue;
   margin: 0 auto;
-  width: 1000px;
-  height: 1350px;
+  height: 1200px;
 }
 
 </style>

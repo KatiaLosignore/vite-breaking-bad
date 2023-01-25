@@ -12,23 +12,27 @@ export default {
 </script>
 
 <template>
-    <div class="characters-card text-center p-2">
-        <img class="img-fluid mb-3" :src="image" :alt="name">
-        <p>{{ number }}</p>
-        <h4><strong>{{ name }}</strong></h4>
-        <p>{{ type }}</p>
-
+    <div class="card ms-3 rounded-4 text-center" style="width: 18rem;">
+        <img :src="image" class="card-img-top mt-4" :alt="name">
+        <div class="card-body">
+            <p class="card-text">{{ number }}</p>
+            <h5 class="card-title">{{ name }}</h5>
+            <p class="card-text">{{ type }}</p>
+            
+        </div>
     </div>
-</template>
 
+</template>
 
 <style lang="scss" scoped>
 
+    .card {
+        height: 320px;
+    }
+
     img {
-        border-radius: 50%;
-        display: block;
-        object-fit: cover;
-        max-width: 100%;
+        width: 150px;
+        margin: 0 auto;
     }
 
 </style>
