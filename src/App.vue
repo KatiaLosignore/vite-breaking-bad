@@ -8,7 +8,7 @@ export default {
   data() {
     return {
       store,
-      typeFilter: []
+      filterValue: ''
     }
   },
   methods: {
@@ -22,8 +22,14 @@ export default {
       axios.get(`${store.apiUri}&eq[type1]=${type}`)
         .then((res) => {
           store.characters = res.data.docs;
-        })
+        });
     },
+    resetSelect() {
+      if(this.onTypeChange) {
+        this.filterValue = this.fetchCharacters(store.apiUri);
+      } 
+            
+    }
   },
   created() {
     this.fetchCharacters(store.apiUri)
@@ -47,7 +53,7 @@ export default {
 
     </div>
   </header>
-  <search-select @type-change="onTypeChange"></search-select>
+  <search-select @type-change="onTypeChange" @type-reset="resetSelect"></search-select>
   <app-main></app-main>
 
 </template>

@@ -3,7 +3,7 @@ export default {
     name: 'SearchSelect',
     data() {
         return {
-            typeFilter : [
+            typeFilter: [
                 "Rock",
                 "Poison",
                 "Electric",
@@ -23,23 +23,28 @@ export default {
                 "Psychic",
                 "Ghost"
             ],
-            filterValue: ''      
-        
+            filterValue: ''
+
         }
     },
-    emits: ['type-change']
+    emits: ['type-change', 'type-reset'],
+
 };
 </script>
 
 <template>
-    <div class="container">
+    <div class="container d-flex align-items-center">
         <select class="form-select mt-4 mb-5" aria-label="Default select example" v-model="filterValue" @change="$emit('type-change', filterValue)">
-        <option selected value="">-</option>
-        <option v-for="pokemonType in this.typeFilter" :value="pokemonType">{{ pokemonType }} </option>
+            <option selected value="">-</option>
+            <option v-for="pokemonType in this.typeFilter" :value="pokemonType">{{ pokemonType }}</option>
         </select>
+        <button type="button" class="btn btn-info mb-4 ms-2" @click="$emit('type-reset')"><strong>Annulla</strong></button>
     </div>
+
 </template>
 
 <style>
-
+select {
+    width: 100px;
+}
 </style>
