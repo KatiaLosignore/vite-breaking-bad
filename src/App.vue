@@ -19,10 +19,8 @@ export default {
         });
     },
     onTypeChange(type) {
-      axios.get(`${store.apiUri}&eq[type1]=${type}`)
-        .then((res) => {
-          store.characters = res.data.docs;
-        });
+      const url = `${store.apiUri}&eq[type1]=${type}`;
+        this.fetchCharacters(url);
     },
     resetSelect() {
       if(this.onTypeChange) {
