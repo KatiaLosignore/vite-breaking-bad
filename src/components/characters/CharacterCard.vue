@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-    <div class="card ms-3 rounded-5 text-center" style="width: 18rem;">
+    <div class="card ms-3 mt-5 rounded-5 text-center" style="width: 18rem;">
         <img :src="image" class="card-img-top mt-4" :alt="name">
         <div class="card-body">
             <p class="card-text fw-semibold">{{ number }}</p>
@@ -27,11 +27,11 @@ export default {
 <style lang="scss" scoped>
 
     .card {
-        height: 320px;
+        height: 350px;
     }
 
     img {
-        width: 150px;
+        width: 100px;
         margin: 0 auto;
     }
 

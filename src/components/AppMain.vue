@@ -29,7 +29,6 @@ export default {
   border: 5px solid blue;
   border-radius: 50px;
   margin: 0 auto;
-  height: 1200px;
 }
 
 </style>
