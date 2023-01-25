@@ -12,12 +12,12 @@ export default {
 </script>
 
 <template>
-    <div class="card ms-3 rounded-4 text-center" style="width: 18rem;">
+    <div class="card ms-3 rounded-5 text-center" style="width: 18rem;">
         <img :src="image" class="card-img-top mt-4" :alt="name">
         <div class="card-body">
-            <p class="card-text">{{ number }}</p>
-            <h5 class="card-title">{{ name }}</h5>
-            <p class="card-text">{{ type }}</p>
+            <p class="card-text fw-semibold">{{ number }}</p>
+            <h5 class="card-title fw-bolder text-primary">{{ name }}</h5>
+            <p class="card-text fw-bolder text-info">{{ type }}</p>
             
         </div>
     </div>

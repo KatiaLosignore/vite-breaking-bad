@@ -27,6 +27,7 @@ export default {
 #section-image {
   background-color: aqua;
   border: 5px solid blue;
+  border-radius: 50px;
   margin: 0 auto;
   height: 1200px;
 }
